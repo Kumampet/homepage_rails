@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :diaries
   resources :titles
   get 'contents/music'
   get '/' => 'home#top' #トップページはアドレスのルートからアクセスできるようにする
